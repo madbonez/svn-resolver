@@ -72,7 +72,7 @@ module.exports = function resolver (bower) {
 			var svn = new SVN(svnConfig);
 
 			return new Promise(function (resolve, reject) {
-				svn.co(svnRemoteUrl, function (err, info) {
+				svn.co(svnRemoteUrl + " --no-auth-cache", function (err, info) {
 					if(err)
 						reject("Error during SVN checkout: "+err);
 					else {
