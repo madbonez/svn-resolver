@@ -16,7 +16,7 @@
   "author": { "name" : "Justin Emery" },
   "license": "MIT",
   "dependencies": {
-    "node.svn": "^0.1.8",
+    "node.svn": "git+https://github.com/madbonez/node.svn.git",
     "tmp": "0.0.31",
     "gulp-run": "1.7.1"
   }
